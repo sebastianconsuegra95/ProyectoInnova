@@ -22,4 +22,12 @@ export class ComentariosquejasPage {
     console.log('ionViewDidLoad ComentariosquejasPage');
   }
 
+  showComentarios(){
+
+  }
+
+  showQuejas(){
+    
+  }
+
 }

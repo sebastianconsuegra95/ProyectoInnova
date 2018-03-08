@@ -25,66 +25,73 @@
 
   <div [ngSwitch]="opinion">
     <ion-list *ngSwitchCase="'comentarios'">
-      <ion-item>
-        <ion-input type="text" medium placeholder="Comentario"></ion-input>
-      </ion-item>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-10>
+            <ion-item>
+              <ion-input type="text" medium placeholder="Comentario"></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col col-2>
+            <button ion-button icon-only clear>
+              <ion-icon name="send"></ion-icon>
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
       <ion-item>
         <ion-avatar item-start>
-          <img src="../assets/imgs/logo.png">
+          <img src="../www/assets/imgs/mujer2.jpg">
         </ion-avatar>
-        <h2>[Nombre Persona]</h2>
+        <h2>Andrea Fernandez</h2>
+        <p>[Comentarios]</p>
+      </ion-item>
+      <ion-item>
+        <ion-avatar item-start> 
+          <img src="../www/assets/imgs/mujer3.jpg">
+        </ion-avatar>
+        <h2>Marla Gutierrez</h2>
         <p>[Comentarios]</p>
       </ion-item>
       <ion-item>
         <ion-avatar item-start>
-          <img src="../assets/imgs/logo.png">
+          <img src="../www/assets/imgs/hombre.jpg">
         </ion-avatar>
-        <h2>[Nombre Persona]</h2>
+        <h2>Antonio Jiménez</h2>
         <p>[Comentarios]</p>
       </ion-item>
-      <ion-item>
-        <ion-avatar item-start>
-          <img src="../assets/imgs/logo.png">
-        </ion-avatar>
-        <h2>[Nombre Persona]</h2>
-        <p>[Comentarios]</p>
-      </ion-item>
-
     </ion-list>
 
     <ion-list *ngSwitchCase="'quejas'">
       <ion-grid>
         <ion-row>
-          <ion-col>
-              <ion-item>
-                  <ion-input type="text" medium placeholder="Queja"></ion-input>
-                </ion-item>
+          <ion-col col-10>
+            <ion-item>
+              <ion-input type="text" medium placeholder="Queja"></ion-input>
+            </ion-item>
           </ion-col>
-          <ion-col>
-              <button ion-button full>Enviar</button>
-              
+          <ion-col col-2>
+            <button ion-button icon-only clear>
+              <ion-icon name="send"></ion-icon>
+            </button>
           </ion-col>
         </ion-row>
       </ion-grid>
-     
-
       <ion-item>
         <ion-avatar item-start>
-          <img src="../assets/imgs/logo.png">
+          <img src="../www/assets/imgs/hombre2.jpg">
         </ion-avatar>
-        <h2>[Nombre Persona]</h2>
+        <h2>Juan Camilo Gomez</h2>
         <p>[Comentarios]</p>
       </ion-item>
       <ion-item>
         <ion-avatar item-start>
-          <img src="../assets/imgs/logo.png">
+          <img src="../www/assets/imgs/hombre4.jpg">
         </ion-avatar>
-        <h2>[Nombre Persona]</h2>
+        <h2>Ivan Galindo</h2>
         <p>[Comentarios]</p>
       </ion-item>
     </ion-list>
-
-
   </div>
 
 </ion-content>

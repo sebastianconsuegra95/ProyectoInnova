@@ -30,7 +30,8 @@ export class MenuPage {
   initializeItems() {
     this.items = [
       {nombre:'Deportes',icon:'ios-basketball'},
-      {nombre:'Trabajo', icon:'ios-clipboard'}
+      {nombre:'Trabajo', icon:'ios-clipboard'},
+      {nombre:'Agricultura', icon:'md-rose'},
     ];
   }
 

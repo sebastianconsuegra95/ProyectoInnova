@@ -11,6 +11,7 @@ import { Menu } from 'ionic-angular/components/menu/menu';
 import { ProyectosPage } from "../pages/proyectos/proyectos";
 import { ProyectodetallePage } from "../pages/proyectodetalle/proyectodetalle";
 import { ComentariosquejasPage } from "../pages/comentariosquejas/comentariosquejas";
+import { ContenidoPage } from "../pages/contenido/contenido";
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ComentariosquejasPage } from "../pages/comentariosquejas/comentariosque
     MenuPage,
     ProyectosPage,
     ProyectodetallePage,
-    ComentariosquejasPage
+    ComentariosquejasPage,
+    ContenidoPage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,8 @@ import { ComentariosquejasPage } from "../pages/comentariosquejas/comentariosque
     MenuPage,
     ProyectosPage,
     ProyectodetallePage,
-    ComentariosquejasPage
+    ComentariosquejasPage,
+    ContenidoPage
   ],
   providers: [
     StatusBar,

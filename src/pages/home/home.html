@@ -1,23 +1,52 @@
 <div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
   <div class="flb">
     <div class="Aligner-item Aligner-item--top"></div>
-    <img src="../assets/imgs/logo.png">
+    <img src="../www/assets/imgs/logo.png">
     <div class="Aligner-item Aligner-item--bottom"></div>
   </div>
 </div>
 
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Innova6K
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-content padding style="background-color:rgb(255, 255, 255)">
+  <ion-grid style="margin-top:10px">
+    <ion-row align-items="center">
+      <ion-col>
+      </ion-col>
+      <ion-col col-8 col-sm>
+        <img src="../www/assets/imgs/participapp2.png">
+      </ion-col>
+      <ion-col>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <h2 style="text-align:center; font-size:35px; font-family:typographica ;margin-top:0px;margin-bottom:0px">
+    ParticipApp
+  </h2>
+  <div>&nbsp;</div>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the
-    <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-list style="margin-bottom: 5px;">
+    <ion-item>
+      <ion-input type="text" medium placeholder="Usuario" style="font-size:14px"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="password" medium placeholder="Contraseña" style="font-size:14px"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <button ion-button large block style="font-size:14px; background-color:#566166" (click)="goPage()">
+    Entrar
+  </button>
+
+  <ion-grid  >
+    <ion-row >
+      <ion-col >
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-col>
+      <ion-col>
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-col>
+      <ion-col>
+        <ion-icon name="logo-tumblr"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
